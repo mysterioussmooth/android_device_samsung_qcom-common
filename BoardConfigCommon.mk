@@ -29,11 +29,9 @@ ENABLE_WEBGL := true
 
 # PowerHAL
 TARGET_PROVIDES_POWERHAL := true
+
 # Flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
-
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -56,5 +54,4 @@ TARGET_FORCE_CPU_UPLOAD := true
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
-
 

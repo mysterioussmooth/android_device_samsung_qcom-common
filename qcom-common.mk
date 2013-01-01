@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 # EGL config
 PRODUCT_COPY_FILES += \
     device/samsung/qcom-common/configs/egl.cfg:system/lib/egl/egl.cfg
@@ -33,15 +32,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.egl.hw=1 \
-    debug.composition.type=dyn \
-    persist.hwc.mdpcomp.enable=true \
+    debug.composition.type=gpu \
+    debug.mdpcomp.maxlayer=3 \
     debug.mdpcomp.logs=0
-
-# GalaxyS3Settings
-# TODO: Move here
-#PRODUCT_PACKAGES += \
-#     GalaxyS3Settings \
-#     SamsungServiceMode
 
 # Omx
 PRODUCT_PACKAGES += \
