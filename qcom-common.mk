@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # EGL config
 PRODUCT_COPY_FILES += \
     device/samsung/qcom-common/configs/egl.cfg:system/lib/egl/egl.cfg
@@ -54,12 +55,6 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     e2fsck \
     setup_fs
-
-# for bugmailer
-PRODUCT_PACKAGES += send_bug
-PRODUCT_COPY_FILES += \
-    system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
-    system/extras/bugmailer/send_bug:system/bin/send_bug
 
 # Init scripts
 PRODUCT_PACKAGES += \

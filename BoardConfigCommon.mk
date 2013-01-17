@@ -44,10 +44,6 @@ TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 BOARD_EGL_CFG := device/samsung/qcom-common/configs/egl.cfg
 
-# FM Radio
-#BOARD_HAVE_FM_RADIO := true
-#BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
-
 # Webkit
 TARGET_FORCE_CPU_UPLOAD := true
 
