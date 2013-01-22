@@ -1,4 +1,6 @@
+#
 # Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012 The LiquidSmooth Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,6 +13,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 BOARD_VENDOR := samsung
 
@@ -29,7 +32,6 @@ ENABLE_WEBGL := true
 
 # PowerHAL
 TARGET_PROVIDES_POWERHAL := true
-
 # Flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 
@@ -50,4 +52,3 @@ TARGET_FORCE_CPU_UPLOAD := true
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
-
