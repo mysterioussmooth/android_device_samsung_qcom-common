@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
 
 # Media config
 PRODUCT_COPY_FILES += \
-	device/samsung/qcom-common/configs/media_codecs.xml:system/etc/media_codecs.xml
+    device/samsung/qcom-common/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # QCOM Display
 PRODUCT_PACKAGES += \
@@ -35,9 +35,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.egl.hw=1 \
-    debug.composition.type=gpu \
-    debug.mdpcomp.maxlayer=3 \
-    debug.mdpcomp.logs=0
+    debug.composition.type=dyn \
+    persist.hwc.mdpcomp.enable=true \
+    debug.mdpcomp.logs=0 \
+    debug.egl.recordable.rgba8888=1
 
 # Omx
 PRODUCT_PACKAGES += \
